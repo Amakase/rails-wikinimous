@@ -26,6 +26,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render "articles/shared/header" %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
