@@ -1,0 +1,9 @@
+<%= render "articles/shared/header" %>
+<div class="container">
+  <ul>
+    <% @articles.each do |article| %>
+      <h1><%= link_to article[:title], article_path(article[:id]) %></h1>
+      <p><%= article[:content] %></p>
+    <% end %>
+  </ul>
+</div>
